@@ -1,0 +1,384 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(31,31,31);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.search_movie_auto{
+  height: 5rem;
+  padding: 1rem 0 1rem 0;
+  width: 100%;
+  display: flex;  
+  justify-content: space-evenly;  
+  align-items: center;
+  border-radius: 5px;
+  background-color: #fff;
+ 
+}
+
+
+.search_movie_empty{
+  background-color:rgb(31,31,31);
+ 
+}
+
+.search_movie{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.autoComplete{
+  color: #fff ;
+}
+.searc_movie_result{
+  width: 100%;
+
+}
+
+.search_movie_list{
+  width: 20%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+.btn-3 {
+  background: rgb(0,172,238);
+background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+   color: rgba(2,126,251,1);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+
+
+.detail_page{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(31,31,31);
+}
+
+.detail_title{
+  color: white;
+  font-size: 30px;
+}
+
+
+.detail_movei_year{
+  color: white;
+  margin-left: 1rem;
+}
+
+.info_details{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 2rem 0;
+  width:1242px ;
+  
+}
+
+.raiting{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.rating_star{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+
+
+
+.data_item_raitng{
+  font-size: 1.25rem;
+}
+
+.star_icon{
+  color: rgb(245,197,24);
+}
+
+.movie_stars{
+  color: #fff;
+}
+
+.genre{
+  margin-top: 20px;
+  color: #fff;
+  width:250px ;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.genre_items{
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 2rem;
+}
+
+
+.plot{
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.detail_info{
+  width:700px ;
+}
+.Actors{
+  margin: 1rem 0;
+}
+.stars_span{
+  font-size: 1.2rem;
+  margin-right: 1.4rem;
+}
+
+.run_box{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.list{
+
+  background-color:rgb(31,31,31) ;
+  
+  
+}
+
+.list_item{
+  padding: 2rem 0 2rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: center;
+  justify-content: space-between;
+}
+.user_watchlist{
+  color: #1976b0;
+  
+}
+
+
+.watchlist{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  margin: 0 0 0 1rem;
+}
+
+.btn_wathclist{
+  width: 13rem;
+}
+.btn_wathclist:hover{
+  color: white;
+}
+
+
+.watchlist_page_link{
+  color: user_watchlist;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+
+
+
+.link_watchlist{
+  width:10rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid  #1c4a78;
+  color: RGB(28, 74, 120);
+
+}
+.link_watchlist:hover{
+  background-color: #fff;
+  transition: .5s ease;
+
+}
+
+.navbar_div{
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 3rem;
+  padding: 0;
+  background-color: rgb(255,255,255);;
+
+
+}
+
+.watchlist_main{
+  color: #fff;
+  background-color: rgb(31,31,31);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.your_list{
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemlist_status{
+  font-style: bold;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 5%;
+  margin-top: 1rem;
+}
+
+.info_watchlist{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+}
+
+.info_movie_watchlisd{
+  margin-left: 2rem;
+}
+
+.item_info_watch{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 5%;
+  margin-top: .5rem;
+}
