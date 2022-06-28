@@ -114,7 +114,7 @@ function Search({addFavourite}) {
           state={{ moviePost: moviePost, API_KEY: API_KEY,addFavourite:addFavourite}}
         >
           <button className="custom-btn btn-3">
-            <span>Daha Fazla Sonuç</span>
+            <span>Daha Fazla</span>
           </button>
         </Link>
       ) : null}

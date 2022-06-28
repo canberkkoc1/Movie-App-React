@@ -382,3 +382,17 @@ background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
   width: 5%;
   margin-top: .5rem;
 }
+
+
+.homepage_div{
+  height: 50vh;
+  color: #fff;
+  font-size: 5rem;
+  margin:0 auto;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+  
