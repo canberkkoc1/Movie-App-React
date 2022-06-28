@@ -30,13 +30,27 @@ export default function Header({name,setName}) {
     if(!name){
       navBar = (
 
-        <ul className="navbar-nav me-auto mb-2 mb-md-0">
+        <ul className="d-flex justify-content-around p-2 w-100 list-unstyled">
+          <Button
+        className="btn_wathclist"
+        variant="outlined"
+      >
             <li className="nav-item active">
               <a className="nav-link active" aria-current="page" href="/login">Login</a>
             </li>
+
+      </Button>
+
+      <Button
+        className="btn_wathclist"
+        variant="outlined"
+      >
+
             <li className="nav-item active">
               <a className="nav-link" href="/register">Register</a>
             </li>        
+
+      </Button>
           </ul>
 
     )

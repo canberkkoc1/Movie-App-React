@@ -48,9 +48,9 @@ const Login = ({setName}) => {
             }
   
     return (
-        <form onSubmit={submit}>
+        <form onSubmit={submit} className="w-25 p-3 m-auto">
       
-        <h1 className="h3 mb-3 fw-normal">Please login</h1> 
+        <h1 className="h3 mb-3 fw-normal text-white">Please login</h1> 
 
 
             <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"

@@ -41,7 +41,7 @@ const Register = () => {
         
 
         return (
-        <form onSubmit={submit}>
+        <form onSubmit={submit} className="w-25 p-3 m-auto">
       
         <h1 className="h3 mb-3 fw-normal text-white">Please Register</h1> 
 

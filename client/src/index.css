@@ -394,5 +394,9 @@ background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
   align-items: center;
 }
 
+.navbar-nav{
+  background-color: #fff;
+  
+}
 
   
